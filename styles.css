@@ -1,0 +1,158 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: grey;
+    background-size: cover;
+}
+
+header {
+    background-color: deepskyblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    margin: 0 15px;
+    background-color: skyblue;
+}   
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+.carousel {
+    display: flex;
+    margin: 30px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner{
+    display: flex;
+    transition: transform 2s auto;
+}
+
+.carousel-item {
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.carousel-item img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+   
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: skyblue;
+    color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.contact-form {
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 60px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .carousel-item, .destination {
+        width: 90px;
+}  
+
+.destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.destination {
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+
+.destination:hover {
+    transform: scale(3.05);
+}
+
+.video {
+    margin-top: 20px;
+    text-align: left;
+}
+/* form heading */
+.contact-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 100px;
+}
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.logo {
+    width: 5%;
+    height: 10;
+    display: inline;
+    margin: 5px auto;  
+
+}
